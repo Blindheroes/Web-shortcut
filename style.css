@@ -1,0 +1,98 @@
+
+/* HTML element style */
+*, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: .8em;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+/* root (buat template)*/
+:root {
+    --bg-main: #207ab3;
+    --bg-secodary:#eaeaea;
+    --txt-primary:#f7f7f7;
+    --txt-secondary: #222;
+    --icon-bg-primary: tomato;
+    --icon-bg-secondary: #777777;
+
+
+}
+
+/* ID style */
+
+#page1{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* class style */
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid white;
+    background-color: var(--bg-secodary);
+border-radius: 5px;
+
+    color: var(--txt-secondary);
+    margin: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+box-shadow: 7px 7px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.icon{
+    font-size: 70px;
+    color: var(--icon-bg-primary);
+}
+
+.btn{
+    width:  200px;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+    text-transform: uppercase;
+    font-size: 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--icon-bg-secondary);
+    transform: rotate(2deg);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, .8);
+    transition: .2s ease-in-out;
+}
